@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="animationstyles.css">
+</head>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="typeit.js"></script>
+<script src="typeit.min.js"></script>
+
+<section class="container">
+    <div class="login">
+      <span class="type-it"></span>
+      <form method="post" action="index.html">
+        <p id="example1"><input type="text" name="login" value="" placeholder="Username or Email"></p>
+        <p id="password"><input type="password" name="password" value="" placeholder="Password"></p>
+        <p id="example2"></p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
+    </div>
+    <p id="example2"></p>
+
+  </section>
+
+
+</body>
+</html>
+
+
+
+<script>
+$(document).ready(function(){
+  $('.type-it').typeIt({
+       strings: ['The Resume of Danyela Rojas'],
+       speed: 50,
+       lifeLike: false,
+       autoStart: false
+
+  });
+});
+
+</script>
